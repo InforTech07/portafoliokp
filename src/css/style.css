@@ -1,0 +1,577 @@
+/*
+Documento de css para los estilos del portafilio
+© 2021 kevin pilo. All rigths reserved.
+*/
+/*-=================== importacion de fuentes =========================-*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Style+Script&family=WindSong&display=swap');
+
+/*-================ VARIABLES GLOBALES =============--*/
+:root
+{
+    /*--primaryColor: #0A192F;*/
+    
+    --primaryColor:#031F30; /*-- color de fondo--*/
+    --secondColor: #48B9A5; /*-- color efecto de fondo y contornos--*/
+    --thirdColor:#0E161B; /*-- color de resaltado de componentes--*/
+    --primaryText: #CCD6F6; /*-- color de titulos--*/
+    --secondText:#8892B0; /*-- color de subtitulos--*/
+    
+}
+
+/*-================== BODY DEL DOM ================-*/
+body
+{
+    background-color: var(--primaryColor);
+    margin: 0 auto;
+}
+/*-=========== CONTENEDOR PRINCIPAL ========-*/
+.main-container{
+    padding: 5px 15px 5px 15px;
+}
+
+
+/*-================== NAVEGADOR ================-*/
+nav
+{
+    height: 5vh;
+    display: grid;
+    justify-items: right;
+}
+nav a 
+{
+    text-decoration: none;
+    color: var(--secondText);
+    font-size: 1.5rem;
+}
+nav svg
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    fill: var(--primaryText) !important;
+}
+
+footer
+{
+    margin-top: 30px;
+    border-top: 1px solid var(--secondText);
+}
+/*-================ SECCION INTRO-CONTAINER ========-*/
+.intro-container
+{
+    width: 100%;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.intro-container span
+{
+    margin: 0;
+    color: var(--primaryText);
+    font-size: 8rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.intro-container p
+{
+    color: var(--secondText);
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+.intro-container li
+{
+    display: inline;
+}
+.intro-container svg
+{
+    width: 25px;
+    height: 25px;
+    margin-inline: 20px;
+    stroke: var(--primaryText);
+}
+
+/*-===================== MENU PRINCIPAL ==========================-*/
+.menu-container
+{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.menu-container p
+{
+    margin: 0;
+    color: var(--primaryText);
+    font-size: 3rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.menu-option
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+}
+.menu-option div
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryText);
+    transition: 0.3s;
+}
+
+.menu-option div:hover
+{
+    transform: scale(0.8);
+    border: 1px solid var(--secondColor);
+}
+.menu-option svg
+{
+    fill: var(--secondText) !important;
+    width: 50px;
+    height: 50px;
+}
+.menu-option a
+{
+    text-decoration: none;
+}
+
+/*-===============  Perfil ===================-*/
+.profile
+{
+    display: grid;
+    place-items: center;
+    color: var(--secondText);
+    text-align: center;
+    margin: 0;
+}
+.profile li
+{
+    display: inline;
+}
+.profile svg
+{
+    width: 20px;
+    height: 20px;
+    margin-inline: 5px;
+    stroke: var(--secondText);
+}
+.profile a
+{
+    text-decoration: none;
+    color: var(--secondText);
+}
+.profile p
+{
+    font-size: 4rem;
+}
+
+/*-===============  PIE DE PAGINA ===================-*/
+.data-footer
+{
+    display: grid;
+    place-items: center;
+    color: var(--secondText);
+    text-align: center;
+    margin: 0;
+}
+.data-footer li
+{
+    display: inline;
+}
+.data-footer svg
+{
+    width: 20px;
+    height: 20px;
+    margin-inline: 5px;
+    stroke: var(--secondText);
+}
+.data-footer a
+{
+    text-decoration: none;
+    color: var(--secondText);
+}
+.data-footer p
+{
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*-================== PROYECTOS ===========================-*/
+.proyect-container
+{
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    color: var(--primaryText);
+}
+
+.content-proyects
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+    margin-bottom: 30px;
+}
+.proyect-container span
+{
+    color: var(--primaryText);
+    font-size: 2rem;
+    font-family: 'MonteCarlo', cursive;
+}
+.content-proyect
+{
+    border: 1px solid var(--secondText);
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryColor);
+    transition: 2s;
+}
+.content-proyect svg
+{
+    width: 20px;
+    height: 20px;
+    stroke: var(--secondText);
+}
+.content-proyect img
+{
+    margin: 10px;
+    width: 50%;
+    height: 100px;
+}
+.content-proyect p
+{
+    text-align: center;
+}
+.content-proyect span
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+.content-proyect:hover
+{
+    transform: scale(0.9);
+    border: 1px solid var(--secondColor);
+}
+/*-=============== FORMACION ESCOLAR ======================-*/
+.academy-content
+{
+    padding: 0px 30px 50px 30px;
+}
+.academy-section
+{
+    margin-bottom: 50px;
+}
+.academy-section span
+{
+    color: var(--primaryText);
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2rem;
+}
+.content-table th
+{
+    width: auto;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    color: var(--primaryText);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.content-table td
+{
+    width: auto;
+    padding: 5px 20px;
+    text-align: left;
+    color: var(--secondText);
+    border-bottom: 1px solid var(--secondText);
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.content-table svg
+{
+    fill: var(--primaryText) !important;
+}
+
+/*================= HABILIDADES ====================-*/
+.skills-container
+{
+    padding: 0px 30px 0px 30px;
+    display: grid;
+   grid-template-columns: 50% 50%;
+}
+.skills-section
+{
+    margin-bottom: 50px;
+}
+.skills-section span
+{
+    color: var(--primaryText);
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2rem;
+}
+/*-=========================== COMUNIDAD ========================-*/
+.community-container
+{
+    display: grid;
+    place-items: center;
+}
+.community-title
+{
+    color: var(--primaryText);
+    text-align: center;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2.5rem;
+}
+.community-title img
+{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+.community-description
+{
+    color: var(--secondText);
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 100px;
+    
+}
+
+
+/*-=================== EFECTO FONDO =====================-*/
+.efect-bin span
+{
+    position:absolute;
+    top: -30%;
+    left: 10%;
+    width: 4px;
+    height: 4px;
+    font-size: 1rem;
+    z-index: -1;
+    color: var(--secondText);
+    animation: animate 5s linear infinite;
+}
+
+.efect-bin span::before
+{
+    content: '';
+    position:absolute;
+    transform: translateY(-100%);
+    width: 300px;
+    height: 1px;
+    z-index: -1;
+    background: linear-gradient(90deg,var(--secondColor),transparent);
+
+}
+
+/*-================== ANIMACION DE FIGURAS ===================-*/
+@keyframes animate {
+    0%
+    {
+        transform: rotate(270deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(270deg) translateX(-110vh);
+        opacity: 0;
+    }
+}
+
+.efect-bin span:nth-child(1)
+{
+    left: 5%;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+}
+.efect-bin span:nth-child(2)
+{
+    left: 40%;
+    animation-delay: 1.8s;
+    animation-duration: 5s;
+}
+
+.efect-bin span:nth-child(3)
+{
+    left: 60%;
+    animation-delay: 1.9s;
+    animation-duration: 4s;
+}
+.efect-bin span:nth-child(4)
+{
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+.efect-bin span:nth-child(5)
+{
+    left: 50%;
+    animation-delay: 2.5s;
+    animation-duration: 8s;
+}
+.efect-bin span:nth-child(6)
+{
+    left: 15%;
+    animation-delay: 2.6s;
+    animation-duration: 10s;
+}
+.efect-bin span:nth-child(7)
+{
+    left: 35%;
+    animation-delay: 2.9s;
+    animation-duration: 10s;
+}
+.efect-bin span:nth-child(8)
+{
+    left: 65%;
+    animation-delay: 3s;
+    animation-duration: 8s;
+}
+.efect-bin span:nth-child(9)
+{
+    left: 75%;
+    animation-delay: 3.5s;
+    animation-duration: 6s;
+}
+
+/*-============================== RESPONSIVIDAD =========================--*/
+
+@media screen and (max-width:768px) {
+	.intro-container{
+        height: 50vh;
+        
+    }
+    .menu-container {
+        height: 50vh;
+        
+    }
+    .content-proyects{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        place-items: center;
+        gap: 3%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+}
+
+@media screen and (max-width:540px) {
+    nav svg
+    {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+	.intro-container span{
+        padding: 120px 0px 0px 0px;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .intro-container p 
+    {
+        font-size: 0.8rem;
+    }
+    .intro-container svg
+    {
+        width: 25px;
+        height: 25px;
+        margin-inline: 15px;
+    }
+    .menu-container{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .menu-container p
+    {
+        font-size: 1.5rem;
+    }
+    .menu-option
+    {
+        padding: 100px 0px 100px 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 5%;
+    }
+    .menu-option svg
+    {
+        width: 40px;
+        height: 40px;
+    }
+    .content-proyect img
+    {
+        width: 50%;
+        height: 80px;
+    }
+    .profile
+    {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .profile li
+    {
+        display: inline;
+    }
+    .profile svg
+    {
+        width: 20px;
+        height: 20px;
+        margin-inline: 10px;
+    }
+    .profile p
+    {
+        font-size: 1rem;
+    }
+    .skills-container
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .academy-content
+    {
+        padding: 10px 10px 0px 10px;
+    
+    }
+    .academy-section
+    {
+        margin-bottom: 10px;
+    }
+
+    .content-table th
+    {
+        width: auto;
+        padding: 3px 5px 3px 5px;
+        font-size: 1rem;
+    }
+    .content-table td
+    {
+        width: auto;
+        padding: 3px 5px;
+    }
+    .community-description{
+        padding: 5px 0px 0px 0px;
+        font-size: 1rem;
+    }
+   
+
+}
+
+@media screen and (max-width:360px) {
+}
+
+
