@@ -17,6 +17,7 @@ Documento de css para los estilos del portafilio
     --thirdColor:#0E161B; /*-- color de resaltado de componentes--*/
     --primaryText: #CCD6F6; /*-- color de titulos--*/
     --secondText:#8892B0; /*-- color de subtitulos--*/
+    --danger:#A1272E;
     
 }
 
@@ -172,6 +173,62 @@ footer
     font-size: 4rem;
 }
 
+.link-contacto
+{
+    font-size: 1.5rem;
+}
+/*-===============  CONTACTO ===================-*/
+
+.card-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-form h2
+{
+    font-size: 2rem;
+    color: var(--primaryText);
+    text-align: center;
+}
+.card-form div
+{
+    display: flex;
+    flex-direction: column;
+}
+.card-form label
+{
+    color: var(--secondText);
+    font-size: 1rem;
+}
+.card-form h3
+{
+    color: var(--danger);
+    font-size: 1rem;
+}
+.card-form input
+{
+    font-size: 1.5rem;
+    color: var(--primaryText);
+    border-color: var(--secondColor);
+    background-color: var(--primaryColor);
+}
+.card-form textarea
+{
+    font-size: 1rem;
+    color: var(--primaryText);
+    border-color: var(--secondColor);
+    background-color: var(--primaryColor);
+}
+.card-form button
+{
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--secondText);
+    padding: 15px 20px;
+    color: var(--primaryColor);
+}
 /*-===============  PIE DE PAGINA ===================-*/
 .data-footer
 {
